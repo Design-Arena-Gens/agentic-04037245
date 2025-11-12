@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji"; color: #0f172a; background: #f8fafc; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.header h1 { font-size: 22px; margin: 0; }
+.sub { color: #475569; font-size: 13px; }
+.footer { margin-top: 24px; color: #64748b; font-size: 12px; text-align: center; }
+
+.page { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+.card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 12px; background: #fff; }
+.card h3 { margin: 0 0 8px 0; font-size: 16px; }
+
+.label { display: block; font-size: 12px; color: #475569; margin-bottom: 6px; }
+.textarea { width: 100%; min-height: 160px; resize: vertical; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #f8fafc; }
+
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.select, .input { height: 36px; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 8px; background: white; }
+
+.button { height: 40px; padding: 0 14px; border-radius: 10px; background: #0ea5e9; color: white; border: none; font-weight: 600; cursor: pointer; }
+.button.secondary { background: #334155; }
+.button.ghost { background: #e2e8f0; color: #0f172a; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.output { min-height: 160px; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 10px; background: #f8fafc; white-space: pre-wrap; }
+
+.badge { display: inline-flex; align-items: center; gap: 6px; background: #eef2ff; color: #3730a3; padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+.small { font-size: 12px; color: #64748b; }
+.hr { height: 1px; background: #e2e8f0; margin: 12px 0; border: 0; }
